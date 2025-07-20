@@ -13,8 +13,19 @@ const pricingData = [
     waLink: "https://wa.me/62881010584318",
   },
   {
+    title: "Bundling Package",
+    subtitle: "1.Lunch & Dinner Package",
+    type: "2 Monthly",
+    portion: "60 Days/60 Portion + free paket trial",
+
+    newPrice: "IDR 1.800.000",
+    button: "Order Now",
+    bg: "bg-green-600",
+    waLink: "https://wa.me/62881010584318",
+  },
+  {
     title: "Monthly",
-    subtitle: "1. Lunch & Dinner Package",
+    subtitle: "2. Lunch & Dinner Package",
     type: "Monthly",
     portion: "30 Days/60 Portion",
     oldPrice: "IDR 1.000.000",
@@ -25,7 +36,7 @@ const pricingData = [
   },
   {
     title: "Monthly",
-    subtitle: "2. Lunch / Dinner Package",
+    subtitle: "3. Lunch / Dinner Package",
     type: "Monthly",
     portion: "30 Days/30 Portion",
     oldPrice: "IDR 500.000",

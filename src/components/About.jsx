@@ -28,7 +28,7 @@ const About = () => {
           viewport={{ once: true }}
         >
           <motion.h1
-            className="text-xl md:text-2xl text-yellow-400 font-semibold"
+            className="text-xl md:text-2xl text-green-500 font-semibold"
             initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}

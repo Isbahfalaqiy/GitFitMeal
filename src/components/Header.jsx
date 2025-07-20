@@ -15,7 +15,7 @@ const Header = () => {
     <div className="pt-36 px-4">
       <div className="flex flex-col items-center justify-center text-center max-w-5xl mx-auto">
         <motion.h1
-          className="text-gray-800 text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
+          className="text-white text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -25,7 +25,7 @@ const Header = () => {
         </motion.h1>
 
         <motion.p
-          className="mt-10 text-gray-500 text-base sm:text-lg md:text-[17px] max-w-4xl"
+          className="mt-10 text-white text-base sm:text-lg md:text-[17px] max-w-4xl"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}

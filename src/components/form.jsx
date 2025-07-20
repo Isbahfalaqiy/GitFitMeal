@@ -28,17 +28,25 @@ const SubscriptionForm = () => {
     },
     {
       id: "monthly1",
+      title: "Bundling Package",
+      description: "1. Lunch / Dinner Package",
+      duration: "2 Monthly",
+      portion: "60 Days / 60 Portion + free paket trial",
+      price: "Rp 1.800.000",
+    },
+    {
+      id: "monthly2",
       title: "Monthly",
-      description: "1. Lunch & Dinner Package",
+      description: "2. Lunch & Dinner Package",
       duration: "Monthly",
       portion: "30 Days / 60 Portion",
       priceOld: "IDR 1.000.000",
       price: "Rp 900.000",
     },
     {
-      id: "monthly2",
+      id: "monthly3",
       title: "Monthly",
-      description: "2. Lunch / Dinner Package",
+      description: "3. Lunch / Dinner Package",
       duration: "Monthly",
       portion: "30 Days / 30 Portion",
       priceOld: "IDR 500.000",
@@ -65,7 +73,7 @@ const SubscriptionForm = () => {
 
   return (
     <div
-      className="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md"
+      className="max-w-3xl mx-auto bg-white p-6 py-12 px-4 rounded-lg shadow-md"
       id="form"
     >
       <h2 className="text-2xl font-bold mb-4">Subscription Form</h2>
@@ -76,9 +84,13 @@ const SubscriptionForm = () => {
       {/* Name */}
       <div className="mb-4">
         <label className="block font-medium text-gray-700">Pengguna</label>
-        <div className="flex items-center border px-3 py-2 rounded-md bg-gray-50">
-          <span className="flex-1">{form.name}</span>
-        </div>
+        <input
+          type="text"
+          value={form.name}
+          onChange={(e) => handleChange("name", e.target.value)}
+          className="w-full border px-3 py-2 rounded-md bg-white"
+          placeholder="Nama lengkap"
+        />
       </div>
 
       {/* Address */}
@@ -86,19 +98,25 @@ const SubscriptionForm = () => {
         <label className="block font-medium text-gray-700">
           Alamat Pengiriman
         </label>
-        <div className="flex items-center border px-3 py-2 rounded-md bg-gray-50">
-          <span className="flex-1">{form.address}</span>
-          <FiEdit2 className="text-gray-500" />
-        </div>
+        <textarea
+          value={form.address}
+          onChange={(e) => handleChange("address", e.target.value)}
+          className="w-full border px-3 py-2 rounded-md bg-white"
+          placeholder="Alamat lengkap"
+          rows={3}
+        />
       </div>
 
       {/* Phone */}
       <div className="mb-4">
         <label className="block font-medium text-gray-700">No Handphone</label>
-        <div className="flex items-center border px-3 py-2 rounded-md bg-gray-50">
-          <span className="flex-1">{form.phone}</span>
-          <FiEdit2 className="text-gray-500" />
-        </div>
+        <input
+          type="text"
+          value={form.phone}
+          onChange={(e) => handleChange("phone", e.target.value)}
+          className="w-full border px-3 py-2 rounded-md bg-white"
+          placeholder="Contoh: 081234567890"
+        />
       </div>
 
       {/* Paket Pilihan */}

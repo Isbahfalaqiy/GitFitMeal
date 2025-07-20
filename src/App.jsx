@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Faq from "./components/Faq";
 import Subs from "./components/form";
 import CaraKerja from "./components/CaraKerja";
-import background from "./assets/images/bg.jpg";
+import background from "./assets/images/bg1.jpg";
 import Testimonials from "./components/Testimonials";
 import css from "./App";
 import PricingSection from "./components/PricingSection";
@@ -25,7 +25,7 @@ const App = () => {
         style={{ backgroundImage: `url(${background})` }}
       >
         {/* Overlay gelap agar teks lebih terbaca */}
-        <div className="absolute inset-0 bg-white opacity-10 z-0" />
+        <div className="blur-sm absolute top-0 left-0 w-full h-full bg-black opacity-70" />
 
         {/* Konten utama (Navbar & Header) */}
         <div className="relative z-10">

@@ -1,4 +1,5 @@
 import React from "react";
+import { FaInstagram, FaFacebook, FaTiktok } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -10,7 +11,7 @@ const Contact = () => {
               Kontak
             </p>
             <p className="mx-auto mt-4 max-w-3xl text-gray-600">
-              kami siap menerima kritik & saran, serta membantu dengan informasi
+              Kami siap menerima kritik & saran, serta membantu dengan informasi
               atau pertanyaan lebih lanjut tentang Go Fit Meal.
             </p>
           </div>
@@ -54,7 +55,7 @@ const Contact = () => {
                 </li>
 
                 {/* Contact */}
-                <li className="flex">
+                <li className="flex flex-col sm:flex-row">
                   <div className="flex h-10 w-10 items-center justify-center rounded bg-black text-gray-50">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +70,7 @@ const Contact = () => {
                       <path d="M15 3a6 6 0 0 1 6 6"></path>
                     </svg>
                   </div>
-                  <div className="ml-4">
+                  <div className="ml-4 mt-2 sm:mt-0">
                     <h3 className="text-lg font-medium text-gray-800">
                       Kontak
                     </h3>
@@ -77,10 +78,26 @@ const Contact = () => {
                     <p className="text-gray-600">
                       Email: gofitmeal24@gmail.com
                     </p>
+
+                    {/* Sosial Media */}
+                    <div className="mt-4">
+                      <h4 className="text-sm font-semibold text-gray-700 mb-2">
+                        Ikuti kami:
+                      </h4>
+                      <div className="flex gap-4 text-2xl text-gray-700">
+                        <a
+                          href="https://www.instagram.com/gofitmeal.id?igsh=MW1sMWRqbDNweTl6dg="
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-pink-500 transition"
+                          aria-label="Instagram"
+                        >
+                          <FaInstagram />
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </li>
-
-                {/* Working Hours */}
               </ul>
             </div>
 
@@ -148,7 +165,7 @@ const Contact = () => {
                 <div className="text-center">
                   <button
                     type="submit"
-                    className="w-full bg-black text-yellow-400 px-6 py-3 font-semibold rounded-md cursor-pointer"
+                    className="w-full bg-black text-green-500 px-6 py-3 font-semibold rounded-md cursor-pointer"
                   >
                     Kirim Pesan
                   </button>

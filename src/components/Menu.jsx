@@ -163,8 +163,8 @@ const Menu = () => {
               onClick={() => setSelectedCategory(category)}
               className={`px-4 py-2 rounded-full font-semibold transition ${
                 selectedCategory === category
-                  ? "bg-amber-400"
-                  : "hover:bg-amber-400"
+                  ? "bg-green-500"
+                  : "hover:bg-green-500"
               }`}
             >
               {category}

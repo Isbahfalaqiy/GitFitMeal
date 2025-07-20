@@ -68,7 +68,7 @@ const Testimonials = () => {
         <svg
           key={i}
           className={`w-4 h-4 ${
-            i <= count ? "text-yellow-400" : "text-gray-300"
+            i <= count ? "text-green-500" : "text-gray-300"
           }`}
           fill="currentColor"
           viewBox="0 0 20 20"

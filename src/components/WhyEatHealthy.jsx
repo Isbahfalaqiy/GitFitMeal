@@ -2,8 +2,15 @@ import React from "react";
 
 const NutritiousFood = () => {
   return (
-    <section className="max-w-5xl mx-auto px-4 py-10 bg-white shadow-lg rounded-xl">
-      {/* Header */}
+    <section
+      id="artikel"
+      className="max-w-5xl mx-auto px-4 py-10 bg-white shadow-lg rounded-xl"
+    >
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
+        Artikel
+      </h1>
+
+      {/* Judul utama */}
       <h1 className="text-3xl font-bold text-green-700 mb-4">
         8 Jenis Makanan Bergizi dan Manfaatnya bagi Tubuh
       </h1>
@@ -124,6 +131,96 @@ const NutritiousFood = () => {
         dengan menu catering yang murah, lezat, dan halal — hingga hidangan
         penutup yang tetap sehat.
       </p>
+
+      {/* Tips sederhana mengadopsi pola makan bergizi */}
+      <h2 className="text-2xl font-semibold text-green-600 mt-6 mb-2">
+        Tips Sederhana Mengadopsi Pola Makan Bergizi dalam Kehidupan Sehari-hari
+      </h2>
+      <p className="text-gray-700 mb-4 italic">
+        Oleh: Rina Pramesti, Ahli Gizi Masyarakat
+      </p>
+      <p className="text-gray-700 mb-4">
+        Memiliki pola makan bergizi tidak harus sulit atau mahal. Banyak orang
+        berpikir bahwa untuk hidup sehat, mereka harus membeli makanan impor
+        atau mengikuti diet yang rumit. Padahal, banyak sumber gizi terbaik
+        justru bisa ditemukan di pasar tradisional atau bahkan ditanam di
+        pekarangan rumah.
+      </p>
+
+      <h3 className="text-xl font-semibold text-green-700 mt-4 mb-2">
+        Mengapa Pola Makan Bergizi Itu Penting?
+      </h3>
+      <p className="text-gray-700 mb-4">
+        Tubuh kita seperti mesin yang membutuhkan bahan bakar berkualitas.
+        Nutrisi yang cukup dan seimbang membantu tubuh menjalankan fungsi-fungsi
+        vitalnya — dari berpikir jernih hingga menjaga sistem imun tetap kuat.
+        Makanan yang bergizi juga berperan dalam menjaga kesehatan mental,
+        mempercepat pemulihan dari penyakit, dan memperpanjang usia harapan
+        hidup.
+      </p>
+
+      <h3 className="text-xl font-semibold text-green-700 mt-4 mb-2">
+        Langkah Mudah Menerapkan Pola Makan Bergizi
+      </h3>
+      <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+        <li>
+          <strong>Mulai dari Piring Anda:</strong> Terapkan konsep "Isi
+          Piringku" dari Kemenkes RI: 1/2 piring berisi buah dan sayur, 1/4
+          karbohidrat, dan 1/4 protein. Gunakan piring kecil jika perlu untuk
+          mengontrol porsi.
+        </li>
+        <li>
+          <strong>Belanja dengan Cerdas:</strong> Buat daftar belanja
+          berdasarkan kebutuhan gizi, bukan sekadar keinginan. Fokus pada bahan
+          makanan segar, seperti sayur musiman, telur, ikan lokal, dan
+          biji-bijian.
+        </li>
+        <li>
+          <strong>Masak Sendiri di Rumah:</strong> Memasak sendiri memberi
+          kendali penuh terhadap bahan dan proses. Kurangi penggunaan minyak,
+          garam, dan gula berlebihan. Gunakan bumbu alami seperti bawang,
+          kunyit, dan jahe.
+        </li>
+        <li>
+          <strong>Snack Cerdas:</strong> Gantilah camilan tinggi kalori dan
+          rendah gizi dengan alternatif sehat seperti kacang panggang, buah
+          segar, atau yogurt tawar.
+        </li>
+        <li>
+          <strong>Hindari Makanan Ultra-Olahan:</strong> Makanan instan, minuman
+          manis kemasan, dan cemilan tinggi pengawet harus dibatasi. Meskipun
+          praktis, kandungan gizinya sering kali rendah dan bisa merugikan
+          kesehatan.
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-semibold text-green-700 mt-4 mb-2">
+        Kiat Bertahan dengan Pola Sehat
+      </h3>
+      <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+        <li>Buat jadwal makan agar tubuh terbiasa.</li>
+        <li>
+          Libatkan keluarga, karena pola makan sehat lebih mudah diterapkan
+          bersama-sama.
+        </li>
+        <li>
+          Tidak perlu ekstrem — cukup mulai dari satu perubahan kecil per
+          minggu.
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-semibold text-green-700 mt-4 mb-2">
+        Penutup: Makan Sehat adalah Investasi
+      </h3>
+      <p className="text-gray-700 mb-6">
+        Mengadopsi pola makan bergizi bukan tentang diet singkat, melainkan gaya
+        hidup berkelanjutan. Tubuh yang sehat akan memberi Anda energi lebih,
+        pikiran yang jernih, dan semangat untuk menjalani aktivitas harian.
+      </p>
+      <p className="text-gray-700 mb-6">
+        Ingat, makanan sehat bukan hanya tentang isi piring, tetapi juga tentang
+        cara kita memperlakukan tubuh dan menghargai kesehatan.
+      </p>
       <p className="text-gray-700 mb-6">
         📞 Hubungi kami:{" "}
         <a href="tel:+62881010584318" className="text-blue-600 underline">
@@ -131,8 +228,7 @@ const NutritiousFood = () => {
         </a>{" "}
         (24 Jam)
       </p>
-
-      {/* Penulis */}
+      {/* Penulis utama */}
       <p className="text-sm italic text-right text-gray-500">
         Penulis: Harry Kamis E.M., S.Gz
       </p>

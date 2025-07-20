@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full fixed top-0 left-0 z-50">
-      <div className="flex items-center justify-between bg-black opacity-85 text-white rounded-full px-6 md:px-12 py-4 max-w-6xl mx-auto shadow-md mt-5">
+      <div className="flex items-center justify-between bg-black text-white rounded-full px-6 md:px-12 py-4 max-w-7xl mx-auto shadow-md mt-5">
         {/* Logo */}
         <div className="flex items-center gap-2 font-bold text-xl">
           <img src={Guard} className="w-8 h-8" />
@@ -30,7 +30,7 @@ const Navbar = () => {
               onClick={() => handleMenuClick("home")}
               className={`px-4 py-1 rounded-full cursor-pointer ${
                 activeMenu === "home"
-                  ? "bg-gray-800 text-yellow-400"
+                  ? "bg-gray-800 text-green-500"
                   : "hover:text-white"
               }`}
             >
@@ -43,7 +43,7 @@ const Navbar = () => {
               onClick={() => handleMenuClick("about")}
               className={`px-4 py-1 rounded-full cursor-pointer ${
                 activeMenu === "about"
-                  ? "text-yellow-400 font-semibold bg-gray-800"
+                  ? "text-green-500 font-semibold bg-gray-800"
                   : "hover:text-white"
               }`}
             >
@@ -56,7 +56,7 @@ const Navbar = () => {
               onClick={() => handleMenuClick("menu")}
               className={`px-4 py-1 rounded-full cursor-pointer ${
                 activeMenu === "menu"
-                  ? "text-yellow-400 font-semibold bg-gray-800"
+                  ? "text-green-500 font-semibold bg-gray-800"
                   : "hover:text-white"
               }`}
             >
@@ -69,7 +69,7 @@ const Navbar = () => {
               onClick={() => handleMenuClick("carakerja")}
               className={`px-4 py-1 rounded-full cursor-pointer ${
                 activeMenu === "carakerja"
-                  ? "text-yellow-400 font-semibold bg-gray-800"
+                  ? "text-green-500 font-semibold bg-gray-800"
                   : "hover:text-white"
               }`}
             >
@@ -82,7 +82,7 @@ const Navbar = () => {
               onClick={() => handleMenuClick("price")}
               className={`px-4 py-1 rounded-full cursor-pointer ${
                 activeMenu === "price"
-                  ? "text-yellow-400 font-semibold bg-gray-800"
+                  ? "text-green-500 font-semibold bg-gray-800"
                   : "hover:text-white"
               }`}
             >
@@ -95,7 +95,7 @@ const Navbar = () => {
               onClick={() => handleMenuClick("form")}
               className={`px-4 py-1 rounded-full cursor-pointer ${
                 activeMenu === "form"
-                  ? "text-yellow-400 font-semibold bg-gray-800"
+                  ? "text-green-500 font-semibold bg-gray-800"
                   : "hover:text-white"
               }`}
             >
@@ -104,11 +104,24 @@ const Navbar = () => {
           </li>
           <li>
             <a
+              href="#artikel"
+              onClick={() => handleMenuClick("artikel")}
+              className={`px-4 py-1 rounded-full cursor-pointer ${
+                activeMenu === "artikel"
+                  ? "text-green-500 font-semibold bg-gray-800"
+                  : "hover:text-white"
+              }`}
+            >
+              Artikel
+            </a>
+          </li>
+          <li>
+            <a
               href="#faq"
               onClick={() => handleMenuClick("faq")}
               className={`px-4 py-1 rounded-full cursor-pointer ${
                 activeMenu === "faq"
-                  ? "text-yellow-400 font-semibold bg-gray-800"
+                  ? "text-green-500 font-semibold bg-gray-800"
                   : "hover:text-white"
               }`}
             >
@@ -124,8 +137,8 @@ const Navbar = () => {
             onClick={() => handleMenuClick("contact")}
             className={`px-6 py-2 rounded-full font-semibold  cursor-pointer ${
               activeMenu === "contact"
-                ? "bg-gray-800 text-yellow-400"
-                : "bg-white text-black hover:bg-yellow-400"
+                ? "bg-gray-800 text-green-500"
+                : "bg-white text-black hover:bg-green-500"
             }`}
           >
             Kontak
@@ -154,7 +167,7 @@ const Navbar = () => {
                 onClick={() => handleMenuClick("home")}
                 className={`px-4 py-1 rounded-full cursor-pointer ${
                   activeMenu === "home"
-                    ? "bg-gray-800 text-yellow-400 font-semibold"
+                    ? "bg-gray-800 text-green-500 font-semibold"
                     : "hover:text-white"
                 }`}
               >
@@ -167,7 +180,7 @@ const Navbar = () => {
                 onClick={() => handleMenuClick("about")}
                 className={`px-4 py-1 rounded-full cursor-pointer ${
                   activeMenu === "about"
-                    ? "text-yellow-400 font-semibold bg-gray-800"
+                    ? "text-green-400 font-semibold bg-gray-800"
                     : "hover:text-white"
                 }`}
               >
@@ -176,15 +189,15 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#price"
-                onClick={() => handleMenuClick("price")}
+                href="#menu"
+                onClick={() => handleMenuClick("menu")}
                 className={`px-4 py-1 rounded-full cursor-pointer ${
-                  activeMenu === "price"
-                    ? "text-yellow-400 font-semibold bg-gray-800"
+                  activeMenu === "menu"
+                    ? "text-green-500 font-semibold bg-gray-800"
                     : "hover:text-white"
                 }`}
               >
-                Harga
+                Produk Kami
               </a>
             </li>
             <li>
@@ -193,24 +206,52 @@ const Navbar = () => {
                 onClick={() => handleMenuClick("carakerja")}
                 className={`px-4 py-1 rounded-full cursor-pointer ${
                   activeMenu === "carakerja"
-                    ? "text-yellow-400 font-semibold bg-gray-800"
+                    ? "text-green-500 font-semibold bg-gray-800"
                     : "hover:text-white"
                 }`}
               >
                 Pemesanan
               </a>
+              <li />
             </li>
+            <li>
+              <a
+                href="#price"
+                onClick={() => handleMenuClick("price")}
+                className={`px-4 py-1 rounded-full cursor-pointer ${
+                  activeMenu === "price"
+                    ? "text-green-500 font-semibold bg-gray-800"
+                    : "hover:text-white"
+                }`}
+              >
+                Harga
+              </a>
+            </li>
+
             <li>
               <a
                 href="#form"
                 onClick={() => handleMenuClick("form")}
                 className={`px-4 py-1 rounded-full cursor-pointer ${
                   activeMenu === "form"
-                    ? "text-yellow-400 font-semibold bg-gray-800"
+                    ? "text-green-500 font-semibold bg-gray-800"
                     : "hover:text-white"
                 }`}
               >
-                Subcription
+                Form
+              </a>
+            </li>
+            <li>
+              <a
+                href="#artikel"
+                onClick={() => handleMenuClick("artikel")}
+                className={`px-4 py-1 rounded-full cursor-pointer ${
+                  activeMenu === "artikel"
+                    ? "text-green-500 font-semibold bg-gray-800"
+                    : "hover:text-white"
+                }`}
+              >
+                Artikel
               </a>
             </li>
             <li>
@@ -219,7 +260,7 @@ const Navbar = () => {
                 onClick={() => handleMenuClick("faq")}
                 className={`px-4 py-1 rounded-full cursor-pointer ${
                   activeMenu === "faq"
-                    ? "text-yellow-400 font-semibold bg-gray-800"
+                    ? "text-green-500 font-semibold bg-gray-800"
                     : "hover:text-white"
                 }`}
               >
@@ -232,8 +273,8 @@ const Navbar = () => {
             onClick={() => handleMenuClick("contact")}
             className={`w-full block py-2 rounded-full text-center font-semibold px-4  ${
               activeMenu === "contact"
-                ? "bg-gray-800 text-yellow-400"
-                : "bg-white text-black hover:bg-yellow-400"
+                ? "bg-gray-800 text-green-500"
+                : "bg-white text-black hover:bg-green-500"
             }`}
           >
             Kontak

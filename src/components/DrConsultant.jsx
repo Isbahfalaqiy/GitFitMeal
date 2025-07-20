@@ -1,5 +1,5 @@
 import React from "react";
-
+import dr from "../assets/images/dr.jpg";
 // --- Data Dokter dengan Gambar Profesional ---
 const doctorsData = [
   {
@@ -16,8 +16,7 @@ const doctorsData = [
     name: "Dr. Budi Santoso, M.Gizi",
     specialization: "Nutrisionis Olahraga",
     bio: "Spesialis nutrisi untuk performa atlet dan kebugaran. Membantu Anda mencapai target fisik melalui pola makan yang tepat dan terukur.",
-    image:
-      "https://images.unsplash.com/photo-1604709177590-b3c4c9a4b6f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80", // Gambar baru
+    image: dr, // Gambar baru
     whatsappLink: "https://wa.me/62881010584318",
   },
 ];

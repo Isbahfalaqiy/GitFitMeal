@@ -3,6 +3,7 @@ import c1 from "../assets/images/c1.jpg";
 import c2 from "../assets/images/c2.jpg";
 import c3 from "../assets/images/c3.jpg";
 import c4 from "../assets/images/c4.jpg";
+import logo from "../assets/images/logo.jpg";
 import { motion } from "framer-motion";
 
 // Data Langkah
@@ -16,6 +17,11 @@ const data = [
     img: c2,
     title: "Lakukan Pembayaran",
     desc: "Setelah submit form, lakukan pembayaran ke rekening yang tertera.",
+  },
+  {
+    img: logo,
+    title: "Konfirmasi Menu",
+    desc: "Setiap hari, pengguna dapat memilih salah satu dari empat menu makan siang dan malam melalui website GoFitMeal, setelah menentukan pilihan, pengguna harus mengkonfirmasi makanan yang dipilih pada hari tersebut.",
   },
   {
     img: c3,
