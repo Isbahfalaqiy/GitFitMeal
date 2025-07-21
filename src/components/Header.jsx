@@ -20,7 +20,7 @@ const Header = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          SOLUSI MAKAN SEHATMU !
+          Solusi Makan Harian yang Lengkap
           <span className="block">Cheap, Tasty and Healty</span>
         </motion.h1>
 
@@ -30,10 +30,20 @@ const Header = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          Sudah coba hidup sehat tapi gagal karena makan sembarangan? GoFitMeal
-          hadir buat kamu yang butuh makanan enak, sehat, dan gak bikin kantong
-          bolong.
+          Mau makan enak, tetap sehat, tapi dompet aman? GoFitMeal jawabannya.
         </motion.p>
+
+        <motion.span
+          className="block text-white text-base sm:text-lg md:text-[17px] max-w-4xl"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.5, duration: 1 }}
+        >
+          Kami hadir untuk kamu yang butuh makanan harian yang lezat, bergizi,
+          dan terjangkau, tanpa perlu masak, tanpa ribet. Tiap hari, kamu bisa
+          pilih menu berbeda yang dikirim langsung ke kosan, kantor, atau tempat
+          aktivitasmu.
+        </motion.span>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -42,7 +52,7 @@ const Header = () => {
         >
           <button
             onClick={scrollToAbout}
-            className="flex items-center gap-2 mt-10 md:mt-15 bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-700 transition cursor-pointer hover:text-amber-400"
+            className="flex items-center gap-2 mt-10 md:mt-15 bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-700 transition cursor-pointer hover:text-green-500"
             aria-label="Get Started - Scroll to About Section"
           >
             Mulai! <FaArrowRight className="text-[15px]" />
